@@ -5,6 +5,7 @@ def golden_pyramid_d(triangle):
             tr[i][j] += max(tr[i + 1][j], tr[i + 1][j + 1])
     return tr[0][0]
 
+
 matrice = []
 with open("file.txt", "r") as f:
     for i in range(15):

@@ -1,13 +1,13 @@
-def Palindromo(n):
+def palindromo(n):
     a = n[::-1]
     if a == n:
         return True
     return False
 
-sum = 0
-for i in range(10**6):
-    bin = "{0:b}".format(i)
-    if Palindromo(i.__str__()) and Palindromo(bin.__str__()):
-        sum += i
-print(sum)
 
+somma = 0
+for i in range(10**6):
+    bino = "{0:b}".format(i)
+    if palindromo(i.__str__()) and palindromo(bino.__str__()):
+        somma += i
+print(somma)

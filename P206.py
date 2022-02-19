@@ -12,10 +12,10 @@ def Check(n):
                                             return True
     return False
 
+
 a = (10**9).__int__()
 b = (1.4*10**9).__int__()
 for i in range(b, a, -10):
     if Check(i*i):
         print(i)
         break
-

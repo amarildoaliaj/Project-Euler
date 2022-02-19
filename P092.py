@@ -5,6 +5,7 @@ def Prossimo(n):
         x += (int(i)*int(i))
     return x
 
+
 p = 0
 for i in range(1, 10_000_000):
     a = i

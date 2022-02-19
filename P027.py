@@ -1,5 +1,6 @@
 import Algorithms
 
+
 def NumeroDiPrimi(s):
     x = 0
     for i in s:
@@ -8,20 +9,22 @@ def NumeroDiPrimi(s):
         else:
             return x
 
+
 def Funzione(n, a, b):
     return n*n + a*n + b
 
-max, A, B = 0,0,0
+
+max, A, B = 0, 0, 0
 for a in range(-999, 1000):
-    for b in range(-999, 1001,2):
+    for b in range(-999, 1001, 2):
         successione = []
         for n in range(100):
-            successione.append(Funzione(n,a,b))
+            successione.append(Funzione(n, a, b))
         primi_di_fila = NumeroDiPrimi(successione)
         if primi_di_fila > max:
             max = primi_di_fila
-            print("MAX: " + max.__str__() + "\t\t\tA:"+ a.__str__()+"\tB:"+b.__str__())
+            print("MAX: " + max.__str__() + "\t\t\tA:" +
+                  a.__str__()+"\tB:"+b.__str__())
             A = a
             B = b
 print(A*B)
-

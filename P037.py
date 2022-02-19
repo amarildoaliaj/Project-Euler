@@ -1,20 +1,21 @@
 import Algorithms
-import numpy
-import time
+
 
 def left(x, primi):
-    while len(str(x))>1:
-        x=int(str(x)[1:])
+    while len(str(x)) > 1:
+        x = int(str(x)[1:])
         if x not in primi:
             return False
     return True
 
+
 def right(x, primi):
-    while len(str(x))>1:
-        x=int(str(x)[:-1])
+    while len(str(x)) > 1:
+        x = int(str(x)[:-1])
         if x not in primi:
             return False
     return True
+
 
 primi = Algorithms.primes2(800000)
 valori = []
