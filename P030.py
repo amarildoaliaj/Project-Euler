@@ -1,4 +1,4 @@
-def Check(x):
+def check(x):
     s = str(x)
     somma = 0
     for i in s:
@@ -10,6 +10,6 @@ def Check(x):
 
 tot = 0
 for i in range(2, 1000000):
-    if Check(i):
+    if check(i):
         tot += i
 print(tot)

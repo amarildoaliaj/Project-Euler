@@ -14,16 +14,16 @@ def Funzione(n, a, b):
     return n*n + a*n + b
 
 
-max, A, B = 0, 0, 0
+massimo, A, B = 0, 0, 0
 for a in range(-999, 1000):
     for b in range(-999, 1001, 2):
         successione = []
         for n in range(100):
             successione.append(Funzione(n, a, b))
         primi_di_fila = NumeroDiPrimi(successione)
-        if primi_di_fila > max:
-            max = primi_di_fila
-            print("MAX: " + max.__str__() + "\t\t\tA:" +
+        if primi_di_fila > massimo:
+            massimo = primi_di_fila
+            print("MAX: " + massimo.__str__() + "\t\t\tA:" +
                   a.__str__()+"\tB:"+b.__str__())
             A = a
             B = b
